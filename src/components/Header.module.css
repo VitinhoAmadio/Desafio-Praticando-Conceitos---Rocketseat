@@ -1,0 +1,63 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  position: relative;
+}
+
+.logo {
+  width: 13rem;
+  height: auto;
+}
+
+.newTaskForm  {
+  position: absolute;
+  height: 3.375rem;
+  bottom: calc(-3.375rem / 2);
+  width: 100%;
+  max-width: 46rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+} 
+
+.newTaskForm input {
+  height: 100%;
+  flex: 1;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+
+.newTaskForm input:focus {  outline: transparent;
+  box-shadow: 0 0 0 2px var(--orange-500);
+}
+
+.newTaskForm input::placeholder {
+  color: vavr(--gray-300);
+}
+
+.newTaskForm button {
+  height: 100%;
+  padding: 0 1rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: 1px solid var(--blue-dark);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: 0.4s ease;
+}
+
+.newTaskForm button:hover {
+  transition: 0.4s ease;
+  background: var(--blue);
+  border: 1px solid var(--blue-dark);
+}
